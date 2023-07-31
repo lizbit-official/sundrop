@@ -1,0 +1,28 @@
+.PlaceAutocompleteInput {
+  flex: 1;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.placeName {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.LocationPickerItem {
+  border: 1px solid var(--teal-900);
+  padding: 1rem;
+
+  &:hover {
+    background: var(--accent-color);
+  }
+}
+
+.highlighted {
+  border-color: var(--accent-color);
+}
+

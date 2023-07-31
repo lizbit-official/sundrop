@@ -1,0 +1,69 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "tsconfigRootDir": "./",
+    "sourceType": "module"
+  },
+  "root": true,
+  "plugins": [
+    "testing-library",
+    "@typescript-eslint/eslint-plugin",
+    "jest"
+  ],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)",
+        "jest.config.js",
+        "jest.setup.ts"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ],
+  "rules": {
+    "class-methods-use-this": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "max-len": ["error", { "code": 140, "ignoreTemplateLiterals": true }],
+    "newline-per-chained-call": "off",
+    "no-await-in-loop": "off",
+    "no-continue": "off",
+    "no-else-return": "off",
+    "indent": "off",
+    "no-plusplus": "off",
+    "import/named": "off",
+    "import/no-default-export": "off",
+    //"import/order": ["error", { "groups": [["builtin", "external", "internal"]], "newlines-between": "always", "alphabetize": { "order": "asc", "caseInsensitive": true } }],
+    "import/prefer-default-export": "off",
+
+    "react/react-in-jsx-scope": "off",
+
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": ["warn"],
+    "@typescript-eslint/indent": ["warn", 2, { "ignoredNodes": [
+      "PropertyDefinition",
+      "FunctionExpression[params]:has(Identifier[decorators])"
+    ]}],
+    "@typescript-eslint/brace-style": ["warn", "stroustrup"],
+    "@typescript-eslint/strict-boolean-expressions": "warn",
+    "@typescript-eslint/consistent-indexed-object-style": "error",
+    "@typescript-eslint/consistent-type-assertions": ["warn", { "assertionStyle": "angle-bracket" }],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-member-accessibility": ["off", { "overrides": { "constructors": "no-public" } }],
+    "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "@typescript-eslint/member-delimiter-style": "error",
+    "@typescript-eslint/member-ordering": "warn",
+
+    "testing-library/no-node-access": "warn"
+  }
+}

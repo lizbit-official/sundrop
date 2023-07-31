@@ -1,0 +1,59 @@
+.DailyForecastCard {
+  border: 1px solid var(--primary-block-border);
+  background-color: var(--primary-block-bg);
+  padding: 1rem;
+  z-index: 2;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 0.6rem;
+
+  &:nth-child(even) {
+    margin-top: -1px;
+  }
+
+  &:hover {
+    border-color: var(--secondary-color);
+    z-index: 10;
+  }
+
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.day {
+  margin: 2px 0;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.forecastText {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.topDetails {
+  min-width: 6rem;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 0.6rem;
+  line-height: 1.25;
+}
+
+.bottom {
+  color: var(--muted-text-color);
+}
+
+.dayCard {}
+.nightCard {
+  grid-row: 2;
+}

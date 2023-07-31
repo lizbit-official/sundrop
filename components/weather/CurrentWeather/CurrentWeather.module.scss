@@ -1,0 +1,29 @@
+.CurrentWeather {
+  background-color: var(--primary-block-bg);
+  border: 1px solid var(--primary-block-border);
+  margin: 1rem 0 2rem;
+  padding: 1.6rem 1.8rem;
+}
+
+.temperature {
+  font-size: 5em;
+}
+
+.unitDegrees {
+  font-size: 3rem;
+  font-weight: 200;
+  vertical-align: super;
+}
+
+.divider {
+  border-color: var(--accent-color);
+  margin: 2rem 0;
+}
+
+.stats {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 1rem 0;
+}

@@ -1,0 +1,66 @@
+/*noinspection CssInvalidAtRule*/
+@import-normalize;
+
+/* Geologica from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Geologica', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
+
+body {
+  background: var(--bg-grad-muted);
+  color: var(--light-text-color);
+
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/***/
+
+:root {
+  --teal-200: #03101c;
+  --teal-400M: #344448;
+  --teal-600: #0e4c62;
+  --teal-650: #1c6080;
+  --teal-650M: #345f6e;
+  --teal-650MA: rgb(52 95 110 / 20%);
+  --teal-700: #45aeb3;
+  --teal-700M: #7bbdc5;
+  --teal-750: #6bdfea;
+  --teal-800: #bcffff;
+  --teal-900: #c9e6f5;
+  --teal-950: #e9faff;
+
+  --blue-600: #428ec5;
+
+  --gold-500: #f6b858;
+
+  /* tokens */
+  --bg-color: var(--teal-200);
+  --primary-color: var(--teal-600);
+  --primary-color-lighter: var(--teal-650);
+  --secondary-color: var(--teal-700);
+  --secondary-color-lighter: var(--teal-750);
+  --accent-color: var(--gold-500);
+
+  --light-text-color: var(--teal-950);
+  --muted-text-color: var(--teal-700M);
+  --dark-text-color: var(--teal-200);
+
+  --bg-grad-muted: linear-gradient(-30deg, var(--teal-650M) 0%, var(--teal-200) 100%);
+
+  --primary-block-border: var(--teal-650M);
+  --primary-block-bg: var(--teal-650MA);
+}

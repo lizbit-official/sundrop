@@ -1,0 +1,42 @@
+.Stat {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &.size-sm {
+    font-size: 11px;
+
+    .value {
+      font-weight: 200;
+    }
+
+    .unit {
+      font-size: 14px;
+    }
+  }
+}
+
+.label {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.value {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.unit {
+  font-size: 0.825em;
+  font-weight: 200;
+  margin-left: 4px;
+}
+
+.top {
+  vertical-align: top;
+}
+
+@media screen and (max-width: 800px) {
+  .Stat {
+    flex-basis: calc(50% - 20px);
+  }
+}

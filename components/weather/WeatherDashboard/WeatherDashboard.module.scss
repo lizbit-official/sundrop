@@ -1,0 +1,59 @@
+.WeatherDashboard {
+  position: relative;
+
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 3rem;
+  max-width: 100rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem min-content 5fr;
+}
+
+.header {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  color: #bcffff;
+  font-size: 76px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0.1;
+  mix-blend-mode: hard-light;
+  user-select: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .WeatherDashboard {
+    grid-template-columns: 1fr;
+    padding: 0 6.3vw;
+  }
+
+  .header {
+    flex-flow: column;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  .branding {
+    font-size: 56px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.currentWeatherContainer {
+  grid-column-start: 1;
+}
+
+.dailyForecastContainer {
+  grid-column: 1 / span 2;
+}
