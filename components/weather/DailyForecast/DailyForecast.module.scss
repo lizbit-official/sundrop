@@ -1,6 +1,6 @@
 .DailyForecast {
   display: grid;
-  grid-template-columns: repeat(7, minmax(10rem, 1fr));
+  grid-template-columns: repeat(8, minmax(10rem, 1fr));
   grid-template-rows: min-content min-content;
   overflow-x: auto;
 }
