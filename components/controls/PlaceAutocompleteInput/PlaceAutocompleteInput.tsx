@@ -78,7 +78,6 @@ const PlaceAutocompleteInput = (props: PlaceAutocompleteInputProps) => {
   const newPlaceIsLoading = placeId && props.place?.placeId !== placeId;
 
   if (isOpen) {
-    console.log(newPlaceIsLoading, placeId, props?.place?.placeId);
     return (
       <div className={cx(styles.PlaceAutocompleteInput)}>
         {(isLocating || newPlaceIsLoading)
