@@ -43,7 +43,6 @@ describe('useGeolocation', () => {
   it('should set error message when getCurrentPosition fails', async () => {
     global.navigator.geolocation.getCurrentPosition = jest.fn().mockImplementationOnce(
       (_: PositionCallback, error: PositionErrorCallback) => {
-        console.log('MOCK');
         Promise.resolve(error({
           message: 'User denied Geolocation',
           code: 1,
