@@ -30,9 +30,9 @@ The app is automatically deployed to Google App Engine via GitHub actions, whene
 I've long appreciated NOAA for their weather reporting, especially
 for their chart interface which no other website seems to provide.
 
-I decided to use their API, but since it doesn't require authentication,
-I implemented the address and place lookup using the Google Places/Maps API 
-proxied through the backend to securely handle keys.
+I decided to use their API, but since it doesn't require authentication, I implemented the 
+address and place lookup using the Google Places/Maps API proxied through the backend to securely handle keys. 
+The weather API isn't proxied in the traditional sense, but makes use of React Server Components.
 
 Initially, I started this app as a separate React frontend and a NestJS backend, 
 but I wanted to try out the new React Server Components and the new Next.js app router
