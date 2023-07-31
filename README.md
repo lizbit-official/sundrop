@@ -32,7 +32,7 @@ for their chart interface which no other website seems to provide.
 
 I decided to use their API, but since it doesn't require authentication,
 I implemented the address and place lookup using the Google Places/Maps API 
-proxied through the backend to securely handles keys.
+proxied through the backend to securely handle keys.
 
 Initially, I started this app as a separate React frontend and a NestJS backend, 
 but I wanted to try out the new React Server Components and the new Next.js app router
